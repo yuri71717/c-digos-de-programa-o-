@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Completo de Códigos de Programação</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Fira+Code:wght@400;500&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-weight: 700;
+            font-size: 3rem;
+            margin: 40px 0;
+            position: relative;
+        }
+
+        h1:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: #007BFF;
+            border-radius: 2px;
+        }
+
+        section {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 25px 0;
+            padding: 30px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            color: #007BFF;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+        }
+
+        pre {
+            background: #282c34;
+            border-radius: 8px;
+            color: #abb2bf;
+            padding: 20px;
+            overflow-x: auto;
+            font-family: 'Fira Code', monospace;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin: 1.5em 0;
+            tab-size: 2;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .code {
+            font-family: 'Fira Code', monospace;
+            white-space: pre-wrap; /* Mantém a formatação do texto */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: #007BFF;
+            color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer i {
+            color: #ff4757;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body style="scroll-behavior: smooth;">
+
+    <h1><i class="fas fa-laptop-code"></i> Guia Completo de Códigos de Programação</h1>
+
+    <section>
+        <h2><i class="fab fa-html5"></i> HTML - Tags e Explicações</h2>
+        <pre class="code">
+&lt;!DOCTYPE&gt;         - Define o tipo de documento como HTML5.
+&lt;html&gt;             - Elemento raiz de um documento HTML.
+&lt;head&gt;             - Contém metadados (como &lt;meta&gt;, &lt;title&gt;, &lt;link&gt;).
+&lt;meta&gt;             - Define metadados como charset, viewport etc.
+&lt;title&gt;            - Define o título da página (aparece na aba do navegador).
+&lt;body&gt;             - Contém todo o conteúdo visível da página.
+&lt;h1&gt; a &lt;h6&gt;        - Cabeçalhos de nível 1 ao 6.
+&lt;p&gt;                - Parágrafo de texto.
+&lt;br&gt;               - Quebra de linha.
+&lt;hr&gt;               - Linha horizontal.
+&lt;a href=""&gt;        - Link clicável.
+&lt;img src=""&gt;       - Imagem.
+&lt;strong&gt;, &lt;em&gt;     - Texto em negrito ou itálico.
+&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;   - Lista não ordenada, ordenada e item de lista.
+&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt; - Tabelas, linhas e colunas.
+&lt;form&gt;, &lt;input&gt;    - Formulário e campos.
+&lt;button&gt;           - Botão clicável.
+&lt;div&gt;, &lt;span&gt;      - Contêineres genéricos.
+        </pre>
+    </section>
+
+    <section>
+        <h2><i class="fas fa-code"></i> HTML – Códigos extras</h2>
+        <pre class="code">
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; — para responsividade em dispositivos móveis
+&lt;link rel="stylesheet" href="estilo.css"&gt; — importar CSS externo
+&lt;script src="script.js"&gt;&lt;/script&gt; — importar JS externo
+&lt;button type="submit"&gt;Enviar&lt;/button&gt; — botão de envio em formulário
+&lt;input type="checkbox" name="aceito" value="sim"&gt; — checkbox
+&lt;input type="radio" name="sexo" value="masculino"&gt; — botão radio
+&lt;label for="inputId"&gt;Texto&lt;/label&gt; — associar texto a input
+&lt;canvas&gt; — área para desenhos gráficos via JS
+&lt;details&gt; e &lt;summary&gt; — criar conteúdo dobrável
+&lt;progress&gt; — barra de progresso
+&lt;figure&gt; e &lt;figcaption&gt; — imagens com legenda
+        </pre>
+    </section>
+
+    <section>
+        <h2><i class="fab fa-css3-alt"></i> CSS - Propriedades e Explicações</h2>
+        <pre class="code">
+color              - Cor do texto.
+background-color   - Cor de fundo.
+font-size          - Tamanho da fonte.
+font-family        - Tipo de fonte.
+margin             - Espaço externo ao elemento.
+padding            - Espaço interno ao elemento.
+border             - Borda do elemento.
+width, height      - Largura e altura.
+display            - Define o comportamento (block, inline, flex etc).
+position           - Define a posição (relative, absolute etc).
+top, left, right   - Usado com position.
+text-align         - Alinhamento do texto.
+justify-content    - Alinha itens em flexbox.
+transition         - Efeitos de transição (animações).
+z-index            - Ordem de sobreposição.
+        </pre>
+    </section>
+
+    <section>
+        <h2><i class="fas fa-paint-brush"></i> CSS – Propriedades e conceitos extras</h2>
+        <pre class="code">
+flex-grow, flex-shrink, flex-basis — controle detalhado do flexbox
+grid-template-columns, grid-template-rows — definir colunas e linhas no grid
+@media — regras para responsividade
+box-sizing: border-box — inclui padding e border no cálculo da largura/altura
+visibility: hidden — esconde o elemento, mas mantém o espaço
+pointer-events: none — desabilita cliques no elemento
+animation-name, animation-duration, animation-iteration-count — criar animações CSS
+calc() — cálculos matemáticos no CSS (ex: width: calc(100% - 50px);)
+var(--minha-cor) — usar variáveis CSS personalizadas
+        </pre>
+    </section>
+
+    <section>
+        <h2><i class="fab fa-js"></i> JavaScript - Comandos e Explicações</h2>
+        <pre class="code">
+let, const, var    - Declaram variáveis (let e const são modernos).
+if, else, switch   - Estruturas condicionais.
+for, while         - Laços de repetição.
+function           - Declara uma função.
+=>                 - Arrow function (função moderna).
+alert()            - Mostra um alerta.
+console.log()      - Exibe no console do navegador.
+document.getElementById() - Acessa elementos do HTML.
+addEventListener() - Adiciona eventos (clique, teclado etc).
+fetch()            - Realiza requisição HTTP (API).
+JSON.stringify()   - Converte objeto em string JSON.
+JSON.parse()       - Converte string JSON em objeto.
+        </pre>
+    </section>
+
+    <section>
+        <h2><i class="fas fa-bolt"></i> JavaScript – Códigos e APIs extras</h2>
+        <pre class="code">
+setTimeout(function, ms) — executa função após delay
+setInterval(function, ms) — executa função repetidamente
+clearTimeout(id), clearInterval(id) — cancelar os timers
+localStorage, sessionStorage — armazenar dados no navegador
+class — criação de classes em JS moderno
+Promise, async/await — lidar com operações assíncronas
+try { } catch(e) { } — tratamento de erros
+map(), filter(), reduce() — manipulação funcional de arrays
+JSON.stringify(), JSON.parse() — converter objetos em JSON e vice-versa
+API Canvas para desenhos gráficos
+API Fetch para chamadas HTTP
+Event bubbling e event delegation (delegação de eventos)
+        </pre>
+    </section>
+
+    <section>
+        <h2><i class="fab fa-php"></i> PHP - Funções e Explicações</h2>
+        <pre class="code">
+echo               - Exibe conteúdo na tela.
+var_dump()         - Mostra informações detalhadas da variável.
+if, else, elseif   - Estruturas de decisão.
+for, foreach       - Laços de repetição.
+function nome()    - Declara uma função.
+\$_GET, \$_POST      - Captura dados do formulário.
+htmlspecialchars() - Evita ataques XSS ao imprimir HTML.
+mysqli_connect()   - Conecta ao banco de dados MySQL.
+mysqli_query()     - Executa consulta SQL.
+        </pre>
+    </section>
+
+    <section>
+        <h2><i class="fas fa-puzzle-piece"></i> PHP – Funções e conceitos avançados</h2>
+        <pre class="code">
+session_start() — iniciar sessão
+header("Location: pagina.php") — redirecionamento
+explode(), implode() — manipular strings e arrays
+trim() — remover espaços no início/fim da string
+filter_var() — validar e sanitizar dados
+password_hash(), password_verify() — segurança em senhas
+date(), time() — manipulação de datas
+try { } catch (Exception $e) { } — tratamento de exceções
+PDO para banco de dados com prepared statements (mais seguro)
+include_once, require_once — incluir arquivos evitando duplicidade
+var_export() — imprimir valor para reutilização no código
+        </pre>
+    </section>
+
+    <section>
+        <h2><i class="fab fa-java"></i> Java - Comandos e Explicações</h2>
+        <pre class="code">
+public, private    - Modificadores de acesso.
+class              - Define uma classe.
+main()             - Ponto de entrada do programa.
+System.out.println() - Imprime no console.
+int, String, boolean - Tipos de dados.
+if, else, switch   - Condicionais.
+for, while         - Repetições.
+ArrayList<>        - Lista dinâmica.
+try, catch         - Tratamento de exceções.
+new                - Cria um novo objeto.
+extends            - Herança de classes.
+        </pre>
+    </section>
+
+    <section>
+        <h2><i class="fas fa-coffee"></i> Java – Comandos e conceitos extras</h2>
+        <pre class="code">
+this — referência ao objeto atual
+super — acessar método ou construtor da superclasse
+interface — contrato para classes implementarem métodos
+abstract class — classe base incompleta
+enum — enumerações (valores fixos)
+final — variáveis, métodos ou classes que não podem ser sobrescritos
+synchronized — controle de acesso em multithreading
+lambda expressions — funções anônimas (Java 8+)
+Streams API — processamento funcional de coleções
+Generics — tipagem genérica em coleções
+try-with-resources — gerenciamento automático de recursos
+Reflection API — inspeção de classes em tempo de execução
+        </pre>
+    </section>
+
+<footer style="text-align: center; margin-top: 40px; padding: 20px; color: #666;">
+        <p>© 2023 Guia de Programação | Criado com <i class="fas fa-heart" style="color: #ff4757;"></i> para desenvolvedores</p>
+    </footer>
+</body>
+</html>
